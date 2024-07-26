@@ -31,7 +31,7 @@ export class Dictionary {
                 'decir', 'dejar', 'delta', 'denso', 'depor', 'diosa', 'dique', 'doler', 'dorar', 'drama', 
                 'droga', 'ducho', 'dudar', 'dupla', 'mango', 'niñez', 'ejido', 'enana', 'espan', 'etapa', 
                 'fajas', 'falda', 'falso', 'fango', 'femar', 'feria', 'fijar', 'focos', 'fondo', 'freno', 
-                'frios', 'fusil', 'gaban', 'gaita', 'ganar', 'garza', 'gener', 'glosa', 'penal', 'patea', 
+                'frios', 'fusil', 'gaban', 'gaita', 'ganar', 'garza', 'grifo', 'glosa', 'penal', 'patea', 
                 'caldo', 'calvo', 'calva', 'claro', 'ovalo', 'tecla', 'salsa', 'deseo', 'oeste', 'techo', 
                 'local', 'robar', 'tener', 'acido', 'acude', 'adula', 'afila', 'amaba', 'amago', 'andas', 
                 'anida', 'arado', 'asear', 'asume', 'atina', 'atora', 'audaz', 'avala', 'azule', 'balas', 
@@ -46,7 +46,7 @@ export class Dictionary {
                 'mayor', 'media', 'menos', 'meson', 'mimos', 'minor', 'mojar', 'moral', 'mover', 'mugir', 
                 'necio', 'nidos', 'noble', 'notas', 'novia', 'obrar', 'oidos', 'optar', 'otear', 'ovulo', 
                 'palas', 'parte', 'patos', 'pedir', 'pesas', 'pollo', 'porra', 'radio', 'rango', 'remos',
-                'dylan'
+                'dylan', 'tarde'
             ];
             
             this.secretWord = this.getRandomSecretWord();
