@@ -1,0 +1,41 @@
+
+
+header {
+    background-color: rgb(255, 115, 0);
+    display: flex;
+    justify-content: center;
+}
+
+
+#contenido_central nav {
+    color: rgb(255, 115, 0);
+}
+
+#contenido_central {
+    display: flex;
+    align-items: flex-start;
+}
+#contenido_resenyas h2 {
+    display: flex;
+    justify-content: center;
+}
+
+article {
+    display: flex;
+}
+
+.prueba1 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10em;
+    margin-right: 3em;
+}
+
+a {
+    color: rgb(255, 115, 0);
+    position: absolute;
+}
+
+
+
+

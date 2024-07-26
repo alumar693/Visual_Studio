@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ventana Nueva</title>
+</head>
+<body>
+    <button onclick="abrirVentana()">Abrir Ventana Nueva</button>
+
+    <script>
+        function abrirVentana() {
+            // Especifica las dimensiones y la posición de la nueva ventana
+            const ancho = 400;
+            const alto = 300;
+            const posX = 100; // Posición horizontal desde la esquina izquierda de la pantalla
+            const posY = 100; // Posición vertical desde la esquina superior de la pantalla
+
+            // Características de la nueva ventana
+            const caracteristicas = `width=${ancho},height=${alto},left=${posX},top=${posY}`;
+
+            // Abre la nueva ventana con las características especificadas
+            window.open('https://www.example.com', 'Ventana Nueva', caracteristicas);
+        }
+    </script>
+</body>
+</html>
