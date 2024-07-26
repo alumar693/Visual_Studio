@@ -46,7 +46,7 @@ export class Dictionary {
                 'mayor', 'media', 'menos', 'meson', 'mimos', 'minor', 'mojar', 'moral', 'mover', 'mugir', 
                 'necio', 'nidos', 'noble', 'notas', 'novia', 'obrar', 'oidos', 'optar', 'otear', 'ovulo', 
                 'palas', 'parte', 'patos', 'pedir', 'pesas', 'pollo', 'porra', 'radio', 'rango', 'remos',
-                'dylan', 'tarde'
+                'dylan', 'tarde', 'sepia'
             ];
             
             this.secretWord = this.getRandomSecretWord();
