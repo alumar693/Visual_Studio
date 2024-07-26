@@ -107,12 +107,9 @@ export class WordleBoard {
     }
 
     submitWord() {
-
         const row = this.rows[this.selectedRowIndex];
         const letters = row.map(cell => cell.letter);
         const suspectedWord = letters.join('');
-
-
         if (suspectedWord.length !== this.MAX_LETTERS || letters.some(letter => letter === '')) {
             alert('La palabra ingresada no está completa.');
             return;
@@ -120,16 +117,16 @@ export class WordleBoard {
         const resultGuess = this.wordleGame.checkWord(suspectedWord);
         this.updateRow(this.selectedRowIndex, letters, resultGuess);
         this.advanceToNextRow();
-
         if(resultGuess.getPerfectLetters() === this.MAX_LETTERS) {
             setTimeout(() => {
-                alert('Felicidades!!! Has acertado la palabra.');
+                window.open('../HTML/Won.html');
                 location.reload();
             }, 100);
         }else{
             if(this.wordleGame.getCurrentAttempt() === this.wordleGame.getMaxAttempts()) {
                 setTimeout(() => {
                     alert('Game Over! La palabra era ' + this.dictionary.getSecretWord() + '.');
+                    window.open('../HTML/Lost.html');
                     location.reload();
                 }, 100);
             } 

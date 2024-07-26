@@ -45,7 +45,8 @@ export class Dictionary {
                 'izado', 'jabon', 'jarra', 'junte', 'junto', 'lanza', 'laser', 'lavar', 'lidar', 'llano', 
                 'mayor', 'media', 'menos', 'meson', 'mimos', 'minor', 'mojar', 'moral', 'mover', 'mugir', 
                 'necio', 'nidos', 'noble', 'notas', 'novia', 'obrar', 'oidos', 'optar', 'otear', 'ovulo', 
-                'palas', 'parte', 'patos', 'pedir', 'pesas', 'pollo', 'porra', 'radio', 'rango', 'remos'
+                'palas', 'parte', 'patos', 'pedir', 'pesas', 'pollo', 'porra', 'radio', 'rango', 'remos',
+                'dylan'
             ];
             
             this.secretWord = this.getRandomSecretWord();

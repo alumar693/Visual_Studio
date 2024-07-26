@@ -52,7 +52,6 @@ export class OnScreenKeyboard {
         switch (key) {
             case 'DELETE':
             case '⌫':
-                console.log('hola');
                 this.wordleBoard.removeLetter();
                 break;
             case 'SUBMIT':
@@ -67,7 +66,6 @@ export class OnScreenKeyboard {
                 break;
             default:
                 selectedCell.setLetter(key);
-                console.log(this.wordleBoard.getSelectedColumnIndex());
                 this.wordleBoard.moveSelectionForward();
                 break;
         }

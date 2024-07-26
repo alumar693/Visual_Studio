@@ -13,10 +13,22 @@ body, html {
     display: flex;
     justify-content: center;    
     padding-top: 1em;    
+    animation: fadeIn 2s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 h2 {
     font-size: 1.5em;
+    animation: textGlow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes textGlow {
+    from { text-shadow: 0 0 5px #ffffff, 0 0 10px #6b6b6b; }
+    to { text-shadow: 0 0 20px #ffffff, 0 0 30px #6b6b6b; }
 }
 
 .board {
@@ -26,6 +38,12 @@ h2 {
     flex-direction: column;
     justify-content: space-around;
     padding-top: 1%;
+    animation: slideIn 1s ease;
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
 }
 
 .board-row {
@@ -49,18 +67,33 @@ h2 {
 
 .selected-cell {
     border: 1.5px solid rgb(108, 192, 213);
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
 }
 
 .perfect-cell {
     background-color: rgb(50, 162, 42, 0.863);
+    animation: bounce 0.5s;
 }
 
 .right-cell {
     background-color: rgb(231, 185, 0, 0.87);
+    animation: bounce 0.5s;
 }
 
 .wrong-cell {
     background-color: rgb(126, 126, 126, 0.849);
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-10px); }
+    60% { transform: translateY(-5px); }
 }
 
 .keyboard {
