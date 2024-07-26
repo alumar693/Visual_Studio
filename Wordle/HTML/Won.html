@@ -5,11 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Felicidades!</title>
     <link rel="stylesheet" href="../styles/WonStyle.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+</head>
 </head>
 <body>
     <div class="popup">
         <h1>Felicidades!</h1>
         <p>Has ganado el juego de la palabra!</p>
     </div>
+    <script>
+        function throwConfetti() {
+            var duration = 3 * 1000; // Duración en milisegundos
+            var animationEnd = Date.now() + duration;
+
+            var interval = setInterval(function() {
+                var timeLeft = animationEnd - Date.now();
+
+                if (timeLeft <= 0) {
+                    return clearInterval(interval);
+                }
+
+                // Elige un lugar aleatorio en el ancho de la ventana
+                var x = Math.random() * window.innerWidth;
+                // Elige un lugar aleatorio en el alto de la ventana
+                var y = Math.random() * window.innerHeight;
+
+                // Lanza confeti
+                confetti({
+                    startVelocity: 30,
+                    spread: 360,
+                    particles: 100,
+                    origin: { x: x / window.innerWidth, y: y / window.innerHeight }
+                });
+            }, 250);
+        }
+
+        // Llama a la función cuando la ventana se carga
+        window.onload = function() {
+            throwConfetti();
+        };
+    </script>
 </body>
 </html>

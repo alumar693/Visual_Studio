@@ -121,7 +121,7 @@ export class WordleBoard {
             setTimeout(() => {
                 window.open('../HTML/Won.html');
                 location.reload();
-            }, 100);
+            }, 300);
         }else{
             if(this.wordleGame.getCurrentAttempt() === this.wordleGame.getMaxAttempts()) {
                 setTimeout(() => {

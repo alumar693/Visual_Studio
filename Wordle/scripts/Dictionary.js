@@ -1,7 +1,7 @@
 export class Dictionary {
     constructor() {
             this.secretWords = [
-                'abeto', 'abito', 'aguta', 'ancho', 'apelo', 'aviso', 'bache', 'banco', 'basta', 'bebes', 
+                'abeto', 'abito', 'aguja', 'ancho', 'apelo', 'aviso', 'bache', 'banco', 'basta', 'bebes', 
                 'bello', 'blusa', 'borde', 'burro', 'cable', 'cacho', 'calor', 'canto', 'carne', 'celda', 
                 'ciuda', 'coche', 'comas', 'copas', 'cuero', 'dente', 'dudas', 'firme', 'flama', 'fuera', 
                 'gente', 'grato', 'horro', 'hotel', 'joven', 'lente', 'lugar', 'madre', 'mucho', 'nacer', 
