@@ -1,0 +1,14 @@
+body {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: Arial;
+}
+h1, h2 {
+    background-color: green;
+}
+strong {
+    color: blue;
+}
+p {
+    text-align: justify;
+}
