@@ -1,5 +1,21 @@
+body {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
 article {
     border: 1px;
-    border-radius: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
     background-color: lightblue;
+    margin-bottom: 10px;
+}
+
+.title {
+    text-align: center;
+    text-decoration: underline;
+}
+
+nav {
+    background-color: yellow;
 }

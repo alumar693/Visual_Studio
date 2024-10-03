@@ -1,0 +1,11 @@
+div {
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+}
+.boton1 {
+    background-color: pink;
+}
+.boton2 {
+    background-color: lightblue;
+}

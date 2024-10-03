@@ -1,0 +1,12 @@
+div {
+    width: 100px;
+    height: 100px;
+}
+.caja1 {
+    position: relative;
+    left: 50px;
+    background-color:#35d4ca;
+}
+.caja2 {
+    background-color: #507beb;
+}
