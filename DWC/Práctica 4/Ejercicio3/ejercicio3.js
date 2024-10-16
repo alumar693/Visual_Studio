@@ -1,4 +1,4 @@
-function isPrimeNumber(number) {
+export function isPrimeNumber(number) {
     let  isPrime = false;
     let counterOfDividers = 0;
     for(let i = 1; i <= number; i++) {

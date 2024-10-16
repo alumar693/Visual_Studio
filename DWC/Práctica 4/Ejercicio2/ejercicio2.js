@@ -1,16 +1,22 @@
-class tableCreator {
+class TableCreator {
     
-    createTable(rows, columns) {
+    static createTable(rows = 10, columns = 4) {
         let table = document.createElement('table');
-        for(i = 0; i < rows; i++) {
-            let column = table.appendChild('tr')
-            for(j = 0; j < columns; j++) {
-                column.appendChild('td')
+        for(let i = 0; i < rows; i++) {
+            let tableRow = document.createElement('tr');
+            table.appendChild(tableRow)
+            for(let j = 0; j < columns; j++) {
+                let column = document.createElement('td');
+                column.textContent = ' ';
+                tableRow.appendChild(column)
             }
         }
-    }
-
-    createTable() {
-
+        document.body.appendChild(table);
     }
 }
+document.getElementById('submit').addEventListener('click', function(event) {
+    event.preventDefault();
+    let rows = parseInt(document.getElementById('rows').value);
+    let columns = parseInt(document.getElementById('columns').value);
+    TableCreator.createTable(rows, columns);
+})

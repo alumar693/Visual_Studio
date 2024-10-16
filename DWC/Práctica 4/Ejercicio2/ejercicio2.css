@@ -1,0 +1,12 @@
+table {
+    width: 100%;
+    border-collapse: collapse; /* Asegura que los bordes no tengan espacio entre celdas */
+}
+th, td {
+    border: 1px solid black; /* Aplicar borde a celdas y encabezados */
+    padding: 8px;            /* Espaciado interno */
+    text-align: left;         /* Alineación de texto */
+}
+th {
+    background-color: #f2f2f2; /* Fondo para los encabezados */
+}
