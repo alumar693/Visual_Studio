@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Mi Portafolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#inicio">Sobre Mí</a></li>
+                <li><a href="#sobre_mi">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Inicio de la página -->
+    <section id="inicio">
+        <h2>Bienvenidos a Mi Portafolio</h2>
+        <p>Aquí encontrarás mis proyectos y más información sobre mí.</p>
+    </section>
+
+    <!-- Sección Sobre Mí -->
+    <section id="sobre_mi" class="sobre_mi">
+        <h2>Sobre Mí</h2>
+        <p>Mi nombre es Dylan y actualmente estoy cursando el segundo año de desarrollo de aplicaciones web.</p>
+    </section>
+
+    <!-- Sección Proyectos -->
+    <section id="proyectos" class="proyectos">
+        <h2>Proyectos</h2>
+        <div class="project">
+            <h3>Proyecto 1</h3>
+            <p><strong>Pokcket Monsters Fighting Club:</strong> Este proyecto es un juego inspirado en el estilo de Pokémon, pero con personajes, mecánicas y movimientos completamente nuevos e innovadores. Ofrece una visión fresca y original, brindando un cambio radical a la industria de los juegos tipo Pokémon.</p>
+        </div>
+        <div class="project">
+            <h3>Proyecto 2</h3>
+            <p><strong>Wordle The Game:</strong> Este juego está inspirado en el popular "Juego de la palabra", pero optimizado completamente para la web. Mejora la jugabilidad y soluciona varios errores presentes en la versión original, ofreciendo una experiencia más fluida y refinada.</p>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="contacto">
+        <h2>Contacto</h2>
+        <p>Puedes contactarme a través de los siguientes medios:</p>
+        <ul>
+            <li>Email: <a href="alumar693@ieselcaminas.org">alumar693@ieselcaminas.org</a></li>
+            <li>Teléfono: +34 600 123 456</li>
+        </ul>
+        <form action="#" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Dylan - Todos los derechos reservados.</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+            <a href="http://www.github.com"><i class="fab fa-github"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
