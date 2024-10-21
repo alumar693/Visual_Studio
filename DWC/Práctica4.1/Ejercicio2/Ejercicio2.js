@@ -7,6 +7,22 @@ function factorial(n) {
     }
     return result;
 }
+
+function factorial2(n) {
+    let result = 1;
+    if (n != 0) {
+        let i = 1;
+        while(i <= n){
+            result *= i
+            i++;
+        }
+    }
+    return result;
+}
 document.getElementById('submit').addEventListener('click', () => {
-    console.log(factorial(parseInt(document.getElementById('number').value)));
+    let number = parseInt(document.getElementById('number').value);
+
+    let result = factorial(number);
+
+    document.getElementById('result').innerHTML = `Factorial de ${number} es: ${result}`;
 });
