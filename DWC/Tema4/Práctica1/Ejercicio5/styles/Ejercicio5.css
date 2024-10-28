@@ -1,0 +1,59 @@
+body {
+    background-image: url("/DWC/Tema4/Práctica1/Ejercicio5/media/maxresdefault (1).jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+    position: relative; /* Necesario para que la imagen se posicione correctamente */
+}
+
+#block {
+    width: 320px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1; /* Para asegurarse de que el contador está por encima de la imagen */
+}
+
+#title, #counter {
+    color: #ECDFCC;
+    font-size: 2em;
+    margin: 10px 0;
+}
+
+img {
+    width: 500px;
+    position: absolute;
+    bottom: 0; /* Sitúa la imagen en la parte inferior */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0; /* Para asegurarse de que está detrás del contador */
+}
+
+#submit {
+    color: #ffffff;
+    font-size: 1.3em;
+    font-weight: bold;
+    background-color: #fd2903;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+    margin-top: 15px;
+}
