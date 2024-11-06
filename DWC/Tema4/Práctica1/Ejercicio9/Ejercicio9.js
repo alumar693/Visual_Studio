@@ -5,8 +5,6 @@ class Punto {
         
     }
 
-    
-
     mostrar() {
         return  `(${x}, ${y})`;
     }
