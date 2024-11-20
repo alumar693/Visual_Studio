@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Reserva - Hotel Paradiso</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Reserva tu habitación en Hotel Paradiso</h1>
+    <form>
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre">
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email">
+        <label for="tel">Teléfono de contacto</label>
+        <input type="tel" id="telefono">
+        <label for="fecha_llegada">Fecha de llegada</label>
+        <input type="date" id="fecha_llegada">
+        <label for="fecha_salida">Fecha de salida</label>
+        <input type="date" id="fecha_salida">
+        <label for="tipo_habitacion">Tipo de habitación</label>
+        <select id="tipo_habitacion">
+            <option value="text">Habitación Individual</option>
+            <option value="text">Habitación Doble</option>
+            <option value="text">Suite</option>
+        </select>
+        <label for="número_huéspedes">Número de huéspedes</label>
+        <input type="number" id="número_huéspedes">
+        <label for="hora_llegada">Hora de llegada</label>
+        <input type="time" id="hora_llegada">
+        <label for="servicios_adicionales">Servicios adicionales</label>
+        <input type="checkbox" id="servicios_adicionales">
+        <textarea id="comentarios_adicionales"></textarea>
+        <label for="color_preferido_decoracion">Color preferido para la decoración</label>
+        <input type="color" id="color_preferido_decoracion">
+        <label for="politica_privacidad">Política de privacidad</label>
+        <input type="checkbox" id="politica_privacidad">
+        <label for="submit">Enviar</label>
+        <input type="submit" id="submit">
+    </form>
+</body>
+</html>
