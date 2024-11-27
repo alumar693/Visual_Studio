@@ -1,0 +1,162 @@
+* {
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+header {
+    background-color: #003366;
+    padding: 20px;
+    position: relative;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 36px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+ul li {
+    padding-left: 10px;
+}
+
+a:hover {
+    color: #FFD700;
+}
+
+a:active {
+    font-size: 16px;
+}
+
+a:focus {
+    text-decoration: underline;
+}
+
+header::before {
+    content: '';
+    display: block;
+    width: 200px;
+    height: 200px;
+    background-image: url('/DIW/Tema4/Practica2/resources/logotipo_paradiso.PNG');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+}
+
+h2 {
+    color: #003366;
+    text-align: center;
+    font-size: 25px;
+    padding-top: 50px;
+}
+
+#bienvenida img {
+    
+}
+
+#bienvenida p {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#bienvenida p::first-letter {
+    font-size: 23px;
+    color: #87CEFA;
+}
+
+
+#submit:hover {
+    background-color: #3399FF;
+}
+
+.writable:focus {
+    border: 2px solid #28a745;
+    border-radius: 5px;
+    outline: none;
+}
+
+input::placeholder{
+    color: #9e9e9e;
+}
+
+@keyframes fadeInMove {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#reserva {
+    padding-left: 15em;
+    padding-right: 15em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 60px;
+    border: 2px solid green;
+    border-radius: 1%;
+    background-color: white;
+    gap: 10px;
+}
+
+label, input, fieldset, select, legend, textarea {
+    padding: 10px;
+    background-color: white;
+}
+
+input, select, fieldset, textarea {
+    border: 2px solid lightgray;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+#fecha_llegada, #fecha_salida {
+    font-size: 14px;
+    color: black;
+}
+
+#tipo_habitacion {
+    background-color: rgb(243, 243, 243);
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#submit {
+    background-color: #0073e6;
+    color: white;
+}
+footer .social-icons a {
+    color: #ECDFCC;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.5em;
+    transition: color 0.3s ease;
+}
+
+footer .social-icons a:hover {
+    color: #3C3D37;
+}

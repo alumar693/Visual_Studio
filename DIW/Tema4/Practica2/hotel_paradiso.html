@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Paradiso</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Hotel Paradiso</h1>
+        <ul>
+            <li><strong><a href="#inicio">Inicio</a></strong></li>
+            <li><strong><a href="#reserva">Reserva</a></strong></li>
+            <li><strong><a href="#servicios">Servicios</a></strong></li>
+            <li><strong><a href="#información">Contacto</a></strong></li>
+        </ul>
+    </header>
+    <section id="bienvenida">
+        <h2>¡Bienvenido a Hotel Paradiso!</h2>
+        <p>
+            Enclavado en un lugar lleno de tranquilidad y belleza, el Hotel Paradiso es el
+            destino perfecto para desconectar del estrés diario y disfrutar de momentos
+            inolvidables. Nos enorgullece ofrecerle un ambiente cálido y acogedor,
+            combinado con servicios de alta calidad diseñados para hacer de su estancia
+            una experiencia única.
+            Desde nuestras cómodas y elegantes habitaciones hasta nuestros espacios de
+            recreo y relajación, todo está pensado para su máximo confort. Nuestro hotel
+            cuenta con un equipo amable y profesional siempre dispuesto a atenderle, ya
+            sea para disfrutar de un desayuno junto a la piscina, planificar excursiones
+            locales o simplemente relajarse con una copa al atardecer.
+            Ya sea que nos visite por negocios, en pareja o en familia, encontrará en el
+            Hotel Paradiso el lugar ideal para crear recuerdos que durarán toda la vida.
+            ¡Esperamos verle pronto y hacer de su estancia algo realmente especial!
+        </p>
+        <img src="resources/imagen_web_paradiso.PNG" alt="Imagen del hotel Paradiso">
+    </section>
+    <section id="reserva">
+        <h2>Reserva tu habitación</h2>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" class="writable" placeholder="Introduce tu nombre completo" required>
+    
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" class="writable" placeholder="Introduce tu correo electrónico" required>
+            
+            <label for="telefono">Teléfono de contacto:</label>
+            <input type="tel" id="telefono" class="writable" placeholder="Introduce tu número de teléfono" required>
+            
+            <label for="fecha_llegada">Fecha de llegada:</label>
+            <input type="date" id="fecha_llegada" min="2024-11-21" required>
+            
+            <label for="fecha_salida">Fecha de salida:</label>
+            <input type="date" id="fecha_salida" required>
+            
+            <label for="tipo_habitacion">Tipo de habitación:</label>
+            <select id="tipo_habitacion">
+                <option value="text">Habitación Individual</option>
+                <option value="text">Habitación Doble</option>
+                <option value="text">Suite</option>
+            </select>
+            
+            <label for="número_huéspedes">Número de huéspedes:</label>
+            <input type="number" id="número_huéspedes" class="writable" required min="1" max="10">
+            
+            <label for="hora_llegada">Hora de llegada:</label>
+            <input type="time" id="hora_llegada" class="writable">
+            <fieldset>
+                <legend>Servicios adicionales:</legend>
+                <label><input type="checkbox" name="servicios" value="desayuno"> Desayuno incluido</label>
+                <label><input type="checkbox" name="servicios" value="wifi"> Aparcamiento incluido</label>
+                <label><input type="checkbox" name="servicios" value="parking"> Cama supletoria</label>
+            </fieldset>
+            
+            <label for="comentarios_adicionales">Comentarios adicionales: </label>
+            <textarea id="comentarios_adicionales" class="writable"></textarea>
+            
+            <label for="color_preferido">Color preferido para la decoración:</label>
+            <select id="color_preferido" name="color_preferido">
+                <option value="">Seleccionar un color</option>
+                <option value="beige">Beige</option>
+                <option value="lightblue">Azul claro</option>
+                <option value="lightgray">Gris suave</option>
+                <option value="white">Blanco</option>
+                <option value="mintgreen">Verde menta</option>
+            </select>
+            
+            <label for="politica_privacidad">Política de privacidad</label>
+            <input type="checkbox" id="politica_privacidad" required>
+            
+            <label for="submit">Confirmar Reserva</label>
+            <input type="submit" id="submit">
+        </form>
+    </section>
+    <section id="información">
+        <h2>información de nuestro hotel:</h2>
+        <ul>
+            <li><strong>Dirección: </strong> Calle del Hotel Paradiso, 123.</li>
+            <li><strong>Teléfono: </strong></li> +34 123 456 789.
+            <li><strong>Correo electrónico: </strong><u>reservas@hotelparadiso.com</u>.</li>
+            <li><strong>Mapa interactivo: </strong> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3058.509904988712!2d-0.06777052349816368!3d39.95235098377156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6000cf92a94581%3A0xaa4afda387e800a7!2sIES%20%C3%81lvaro%20Falomir!5e0!3m2!1ses!2ses!4v1732706263074!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></li>
+        </ul>
+    </section>
+    <footer>
+        <p><strong>© 2024 Hotel Paradiso - Todos los derechos reservados.</strong></p>
+        <a href="">Política de privacidad</a>
+        <div class="social-icons">
+            <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+            <a href="https://Instagram.com"> <i class="fab fa-instagram"></i></a>
+            <a href="https://es.linkedin.com/"> <i class="fab fa-linkedin"></i></a>
+        </div>
+        <a href="#información">Contáctanos</a>
+    </footer>
+</body>
+</html>
