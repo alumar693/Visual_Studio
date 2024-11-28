@@ -16,7 +16,7 @@ body {
 
 .card {
     background-color: green;
-    animation: abrir_tarjeta 4s;
+    animation: abrir_tarjeta 4s forwards;
     animation-delay: 1s;
     transform-origin: left;
     z-index: 100;
@@ -33,7 +33,14 @@ body {
     0% {
         transform: rotateY(0deg);
     }
+    39% {
+        background-color: green;
+    }
+    40% {
+        background-color: white;
+    }
     100% {
+        background-color: white;
         transform: rotateY(-180deg);
     }
 }
