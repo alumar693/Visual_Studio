@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    perspective: 1000px;
+}
+
+.card, .content {
+    position: absolute;
+    height: 200px;
+    width: 175px;
+    border: 1px solid black;
+}
+
+.card {
+    background-color: green;
+    animation: abrir_tarjeta 4s;
+    animation-delay: 1s;
+    transform-origin: left;
+    z-index: 100;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+@keyframes abrir_tarjeta {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(-180deg);
+    }
+}

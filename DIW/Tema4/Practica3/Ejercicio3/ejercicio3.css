@@ -1,0 +1,25 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+@keyframes aumentar {
+    0% {
+        transform: scale(1);
+    }
+    33.33% {
+        transform: scale(2);
+    }
+    66.66% {
+        transform: scale(0.25);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.block:hover {
+    animation: aumentar 3s linear;
+}

@@ -1,0 +1,14 @@
+@keyframes movimiento_lateral {
+    100% {
+        transform: translateX(5000px);
+    }
+}
+
+.block {
+    width: 200px;
+    height: 200px;
+    border: 2px solid blue;
+    border-radius: 100px;
+    background-color: blue;
+    animation: movimiento_lateral ease-in 5s;
+}

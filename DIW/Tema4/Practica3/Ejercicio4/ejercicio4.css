@@ -1,0 +1,31 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+@keyframes cambiar_color {
+    0% {
+        background-color: red;
+    }
+    25% {
+        background-color: pink;
+    }
+    50% {
+        background-color: blue;
+    }
+    75% {
+        background-color: pink;
+    }
+    100% {
+        background-color: red;
+    }
+}
+
+.block {
+    height: 300px;
+    width: 300px;
+    background-color: red;
+    animation: cambiar_color 5s linear 4;
+}
