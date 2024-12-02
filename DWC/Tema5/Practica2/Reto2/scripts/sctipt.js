@@ -1,0 +1,3 @@
+function leerParrafo() {
+    document.addEventListener
+}
