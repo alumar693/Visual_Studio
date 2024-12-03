@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,23 +22,24 @@
         </div>
     </div>
     <br>
-    <form action="/DWC/Tema5/Practica2/Reto2/scripts/">
+    <form id="formulario" action="#" onsubmit="leerParrafo(); return false;">
         <label for="name">Nombre:</label>
-        <input type="text" id="name" name="name" placeholder="Escribe tu nombre">
+        <input type="text" id="name" name="name" placeholder="Escribe tu nombre" required>
         <br><br>
         <label for="email">Email:</label>
-        <input type="text" id="email" name="email" placeholder="Escribe tu email" required = "true">
+        <input type="text" id="email" name="email" placeholder="Escribe tu email" required>
         <br>
-        <span>*Campo obligatorio</span>
+        <span id="email-error" class="error-message">* El email no es correcto</span>
         <br><br>
         <label for="textArea">Escribe aquí</label>
         <br>
-        <textarea name="textArea" id="textArea" placeholder="Escribe tu propio párrafo" required = "true" cols="40" rows="5" wrap="hard"></textarea>
-        <span>*Campo obligatorio</span>
+        <textarea name="textArea" id="textArea" placeholder="Escribe tu propio párrafo" required cols="40" rows="5" wrap="hard"></textarea>
+        <span id="textArea-error" class="error-message">* Campo obligatorio</span>
         <br><br>
-        <input type="button" value="Añadir un párrafo">
+        <input type="button" value="Añadir un párrafo" onclick="leerParrafo()">
         <br><br>
+        <input type="button" value="Descargar documento" onclick="descargarDocumento()">
     </form>
-    <script src="scripts/script.js"></script>
+    <script src="scripts/sctipt.js"></script>
 </body>
 </html>

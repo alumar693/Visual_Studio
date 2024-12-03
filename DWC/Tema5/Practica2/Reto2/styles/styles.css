@@ -26,7 +26,13 @@ form {
     max-width: 600px;
 }
 
-span {
+.error-message {
     display: none;
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+#error {
     color: red;
 }
