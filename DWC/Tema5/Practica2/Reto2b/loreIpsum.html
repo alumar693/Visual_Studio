@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lorem Ipsum</title>
+    <link rel="icon" href="resources/hogar.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <h1>Lorem Ipsum</h1>
+    <div class="si">
+        <div class="column">
+            <p>¡Bienvenid@!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod, erat vel pharetra aliquet, sapien quam dictum dolor, vel fermentum mauris ligula non velit. Sed feugiat ligula nec sem vehicula tincidunt. Nulla euismod lacus in est rhoncus dictum. Etiam tempor tortor nec ex porttitor, id porttitor risus viverra. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+            <p>Suspendisse potenti. Nulla facilisi. In non libero non felis fermentum molestie. Vestibulum in lacus vitae nisl pharetra scelerisque ut et risus. Quisque pharetra mi sit amet justo vehicula dictum. Donec congue urna id purus luctus, non vulputate erat auctor. Integer ac elit vitae elit mollis cursus. Curabitur in semper enim, nec accumsan sem.</p>
+            <p>Cras rutrum feugiat turpis, et ultricies justo condimentum nec. Nunc mollis nisi vel est tempor fermentum. Aenean fringilla lectus ut libero dapibus, sit amet volutpat risus elementum. Aliquam sodales, neque vel tincidunt congue, turpis lacus posuere nunc, a tincidunt mi turpis ut orci. Curabitur sed velit erat. Duis feugiat nisi vitae odio consequat, nec tincidunt ligula lacinia. Vivamus auctor magna sed metus suscipit, vitae volutpat purus tempor.</p>
+        </div>
+        <div class="column">
+            <p>Nullam ut turpis eu odio congue fringilla. Vestibulum tincidunt, eros ut tincidunt tincidunt, lectus eros sollicitudin risus, at condimentum nisi nisi ut ligula. Etiam suscipit dapibus diam, non dictum nisi vehicula sit amet. Sed sed bibendum justo, id auctor lectus. Suspendisse id mauris tincidunt, luctus turpis a, fermentum odio. Proin ut dignissim augue. Donec vitae felis erat.</p>
+            <p>Morbi vehicula urna ac arcu suscipit, a facilisis lacus iaculis. Fusce nec posuere erat. Pellentesque nec mi vel purus accumsan pharetra. Maecenas facilisis magna sit amet nibh tristique, a tristique nunc aliquet. Aenean sodales ligula in justo rhoncus, at molestie sem dictum. Nulla facilisi. Ut tristique urna a ligula facilisis, nec varius lorem vulputate. Sed porta ligula justo, vitae euismod ex suscipit at.</p>
+        </div>
+    </div>
+    <br>
+    <form id="formulario" action="#" onsubmit="leerParrafo(); return false;">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" placeholder="Escribe tu nombre" required>
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" placeholder="Escribe tu email" required>
+        <br>
+        <span id="email-error" class="error-message">* El email no es correcto</span>
+        <br><br>
+        <label for="textArea">Escribe aquí</label>
+        <br>
+        <textarea name="textArea" id="textArea" placeholder="Escribe tu propio párrafo" required cols="40" rows="5" wrap="hard"></textarea>
+        <span id="textArea-error" class="error-message">* Campo obligatorio</span>
+        <br><br>
+        <input type="button" value="Añadir un párrafo" onclick="leerParrafo()">
+        <br><br>
+        <input type="button" value="Descargar documento" onclick="descargarDocumento()">
+    </form>
+    <div id="contador-visitas">Número de visitas: 0</div>
+    <script src="scripts/sctipt.js"></script>
+</body>
+</html>
