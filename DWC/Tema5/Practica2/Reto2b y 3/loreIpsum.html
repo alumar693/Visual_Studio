@@ -36,6 +36,11 @@
         <textarea name="textArea" id="textArea" placeholder="Escribe tu propio párrafo" required cols="40" rows="5" wrap="hard"></textarea>
         <span id="textArea-error" class="error-message">* Campo obligatorio</span>
         <br><br>
+        <label for="browser">Escribe aquí la palabra que quieres buscar</label>
+        <br>
+        <input type="text" id="browser" name="browser" placeholder="Busca aquí">
+        <input type="button" value="Buscar" onclick="buscarPalabra()">
+        <br><br>
         <input type="button" value="Añadir un párrafo" onclick="leerParrafo()">
         <br><br>
         <input type="button" value="Descargar documento" onclick="descargarDocumento()">

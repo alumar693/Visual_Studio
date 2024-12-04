@@ -1,27 +1,3 @@
-// Función para obtener el valor de una cookie por su nombre
-function getCookie(name) {
-    let value = "; " + document.cookie;
-    let parts = value.split("; " + name + "=");
-    if (parts.length === 2) return parts.pop().split(";").shift();
-    return null;
-}
-
-// Función para establecer una cookie
-function setCookie(name, value, days) {
-    let expires = "";
-    if (days) {
-        let date = new Date();
-        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-        expires = "; expires=" + date.toUTCString();
-    }
-    document.cookie = name + "=" + (value || "") + expires + "; path=/";
-}
-
-// Función para eliminar una cookie
-function deleteCookie(name) {
-    document.cookie = name + '=; Max-Age=-99999999; path=/';
-}
-
 function leerParrafo() {
     const email = document.getElementById("email").value;
     const texto = document.getElementById("textArea").value;
@@ -70,18 +46,26 @@ function anyadeParrafo(texto) {
     document.getElementById("formulario").reset();
 }
 
-// Función para contar visitas usando cookies
-function contarVisitas() {
-    let visitas = getCookie("visitas");
-    
-    if (visitas) {
-        visitas = parseInt(visitas) + 1;
-    } else {
-        visitas = 1;
+// Crear una cookie con fecha de caducidad en 1 año
+function setCookie(nombre, valor, dias) {
+    const fecha = new Date();
+    fecha.setTime(fecha.getTime() + dias * 24 * 60 * 60 * 1000);
+    document.cookie = `${nombre}=${valor}; expires=${fecha.toUTCString()}; path=/`;
+}
+
+// Leer una cookie
+function getCookie(nombre) {
+    const cookies = document.cookie.split("; ");
+    for (let cookie of cookies) {
+        const [clave, valor] = cookie.split("=");
+        if (clave === nombre) return valor;
     }
-    
-    setCookie("visitas", visitas, 365); // Cookie caduca en 1 año
-    document.getElementById("contador-visitas").textContent = `Número de visitas: ${visitas}`;
+    return null;
+}
+
+// Borrar una cookie
+function deleteCookie(nombre) {
+    document.cookie = `${nombre}=; expires=Thu, 01 Jan 1977 00:00:00 GMT; path=/`;
 }
 
 // Mostrar cuadro de confirmación para las cookies
@@ -90,17 +74,31 @@ function mostrarAvisoCookies() {
     
     if (!cookieConsent) {
         let resultado = confirm("¿Estás seguro de que quieres continuar? Esta página usa cookies para contar visitas.");
-        
+
         if (resultado) {
             setCookie("cookieConsent", "true", 365); // El consentimiento es válido por 1 año
-            contarVisitas(); // Contar visitas solo si acepta las cookies
+            contarVisitas();
         } else {
             deleteCookie("visitas"); // Borrar la cookie de visitas si no acepta
         }
     } else {
-        contarVisitas(); // Si ya ha aceptado las cookies, contar visitas automáticamente
+        contarVisitas();
     }
 }
 
-// Ejecutar aviso de cookies al cargar la página
+// Contar visitas
+function contarVisitas() {
+    let visitas = getCookie("visitas");
+    visitas = visitas ? parseInt(visitas) + 1 : 1; // Incrementar visitas o iniciar en 1
+    setCookie("visitas", visitas, 365);
+    document.getElementById("contador-visitas").textContent = `Número de visitas: ${visitas}`;
+}
+
+// Ejecutar la lógica al cargar la página
 mostrarAvisoCookies();
+
+//Buscar una palabra en el texto
+function buscarPalabra() {
+    const palabra = document.getElementById("browser").value
+    window.find(palabra)
+}
