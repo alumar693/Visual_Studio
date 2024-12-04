@@ -33,10 +33,10 @@ body {
     0% {
         transform: rotateY(0deg);
     }
-    39% {
+    28% {
         background-color: green;
     }
-    40% {
+    29% {
         background-color: white;
     }
     100% {
