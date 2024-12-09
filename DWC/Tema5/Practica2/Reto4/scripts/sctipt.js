@@ -142,6 +142,7 @@ function mostrarTexto() {
     });
 }
 
+//invertir parrafos
 function invertirParrafos() {
     parrafos.forEach(parrafo => {
         const textoParrafo = parrafo.textContent;
