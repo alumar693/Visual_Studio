@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MENU NAVIDEÑO</title>
+    <link rel="stylesheet" href="styless.css">
+</head>
+<body>
+    <h1>MENU NAVIDEÑO</h1>
+    <form action="">
+        <fieldset>
+            <legend>Entrantes:</legend>
+            <p>Escoge el/los entrantes que desees.</p>
+            <label><input type="checkbox" name="entrante" value="Ensalada"> Ensalada especial</label>
+            <label><input type="checkbox" name="entrante" value="Jamón Ibérico"> Jamón Ibérico</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Segundo plato:</legend>
+            <p>Escoge un segundo plato.</p>
+            <label><input type="radio" name="segundo" value="Pavo"> Pavo trufado</label>
+            <label><input type="radio" name="segundo" value="Salmón"> Salmón al cava</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Postre</legend>
+            <p>Escoge el postre deseado.</p>
+            <select name="postres" id="postres">
+                <option value="no postre">Sin postre</option>
+                <optgroup label="Con lactosa"></optgroup>
+                <option value="tarta">Tarta de queso</option>
+                <option value="coulant">Coulant de chocolate</option>
+                <optgroup label="Sin lactosa"></optgroup>
+                <option value="macedonia">Macedonia</option>
+                <option value="sorbete">Sorbete de limón con cava</option>
+            </select>
+        </fieldset>
+
+        <input type="submit" name="pedir" id="submit" placeholder="Pedir el menú" onclick="factura()">
+        <input type="button" name="borrar" onclick="inicializar()" value="Borrar">
+    </form>
+    <div id="ticket"></div>
+    <script src="scripts.js"></script>
+</body>
+</html>
