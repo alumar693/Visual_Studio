@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopción de Animales</title>
+</head>
+<body>
+    <h1>Adopta un Animal</h1>
+
+    <label for="animal">Elige el tipo de animal:</label>
+    <select id="animal" name="animal">
+        <option value="perro">Perro</option>
+        <option value="gato">Gato</option>
+    </select>
+
+    <!-- Botón que llama a la función mostrarAnimales al hacer clic -->
+    <button type="button" onclick="mostrarAnimales()">Mostrar Animal</button>
+    
+    <br><br>
+    <div id="mostrarDatos">
+        <!-- Aquí se mostrará la información del animal seleccionado -->
+    </div>
+
+    <!-- Coloca el script al final para asegurar que el DOM esté cargado -->
+    <script src="scripts.js"></script>
+</body>
+</html>
