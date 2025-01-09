@@ -1,0 +1,49 @@
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 0 auto;
+}
+
+.tabla {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#celda1 {
+    width: 100%;
+    text-align: center;
+}
+
+.oferta {
+    flex: 1 1 300px;
+    background-color: white;
+    border: 3px double blue;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+#Anuncio {
+    flex: 1 1 500px;
+    background-color: blue;
+    border-radius: 10px;
+    border: 5px solid blue;
+    color: white;
+    text-align: left;
+    padding: 20px;
+}
+
+.precio {
+    color: blue;
+}
+
+@media (max-width: 640px) {
+    .contenedor {
+        flex-direction: column;
+        align-items: center;
+    }
+}
