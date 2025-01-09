@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>Ejemplo de parámetro de objeto de evento</title>
+
+    <script type="text/javascript">
+        document.addEventListener("mousedown", (event) => {
+            alert(
+          "clientX value: " +
+            event.clientX +
+            "\n" +
+            "clientY value: " +
+            event.clientY +
+            "\n",
+        );
+        })
+    </script>
+  </head>
+
+  <body>
+    <p>
+      Para ver las coordinadas del ratón haga clic en cualquier lugar de esta
+      página.
+    </p>
+  </body>
+</html>
