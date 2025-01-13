@@ -1,0 +1,34 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+  }
+  
+  .contenedor {
+    display: flex;
+    gap: 10px;
+    width: 90%;
+  }
+  
+  .cuadro {
+    flex: 1;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .cuadro h2 {
+    margin-top: 0;
+  }
+  
+  p {
+    margin: 10px 0 0;
+  }
+  
+  #interaccion {
+    height: 50px;
+  }

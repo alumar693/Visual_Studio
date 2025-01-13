@@ -1,0 +1,15 @@
+
+  .contenido {
+    padding: 20px;
+  }
+  
+  .cartel {
+    position: fixed;
+    background-color: rgb(255, 0, 221);
+    color: white;
+    padding: 5px 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
