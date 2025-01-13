@@ -1,0 +1,11 @@
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#capa {
+    height: 50vh;
+    width: 50vh;
+    border: 1px solid black;
+}
