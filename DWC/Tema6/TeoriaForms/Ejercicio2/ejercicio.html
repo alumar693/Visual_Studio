@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Incidencias</title>
+</head>
+<body>
+    <div class="container">
+        <div class="image-container">
+            <img id="image" src="Web_150DPI-20221216_WeWork_Product_Shoot_Q4_8_sq.png">
+        </div>
+        <div class="form-container">
+            <select id="incidentType">
+                <option value="distribution">Distribución</option>
+                <option value="office">Oficina</option>
+                <option value="production">Producción</option>
+            </select>
+            <label for="serie">Número de serie</label>
+            <input type="text" id="serie">
+            <button id="showDescription">Mostrar descripción</button>
+            <textarea id="description" readonly></textarea>
+            <input type="submit" id="submit">
+        </div>
+    </div>
+    <style>
+        img {
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+    <script>
+        const image = document.getElementById('image');
+        const incidentType = document.getElementById('incidentType');
+        const showDescriptionButton = document.getElementById('showDescription');
+        const descriptionArea = document.getElementById('description');
+        const submit = document.getElementById('submit');
+
+        const data = {
+            distribution: {
+                img: "distribucion-internacional-sage-x3.jpg",
+                description: "Incidencia en el área de distribución: problemas con la logística o entrega de productos."
+            },
+            office: {
+                img: "línea-de-producción-Toyota-Material-Handling---Mjolbi.png", 
+                description: "Incidencia en el área de oficina: problemas relacionados con administración o equipos de oficina."
+            },
+            production: {
+                img: "Web_150DPI-20221216_WeWork_Product_Shoot_Q4_8_sq.png",
+                description: "Incidencia en el área de producción: inconvenientes en la línea de fabricación o equipos de producción."
+            }
+        };
+
+        incidentType.addEventListener('change', () => {
+            const selectedType = incidentType.value;
+            image.src = data[selectedType].img;
+            image.alt = `Imagen de ${selectedType}`;
+        });
+
+        showDescriptionButton.addEventListener('click', () => {
+            const selectedType = incidentType.value;
+            descriptionArea.value = data[selectedType].description;
+            descriptionArea.style.display = "block";
+        });
+
+        submit.addEventListener('click', () => {
+            
+        });
+    </script>
+</body>
+</html>
