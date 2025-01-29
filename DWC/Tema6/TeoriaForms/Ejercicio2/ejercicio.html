@@ -35,6 +35,7 @@
         const showDescriptionButton = document.getElementById('showDescription');
         const descriptionArea = document.getElementById('description');
         const submit = document.getElementById('submit');
+        const serie = document.getElementById('serie');
 
         const data = {
             distribution: {
@@ -51,20 +52,30 @@
             }
         };
 
+        // Cambiar imagen al seleccionar tipo de incidencia
         incidentType.addEventListener('change', () => {
             const selectedType = incidentType.value;
             image.src = data[selectedType].img;
             image.alt = `Imagen de ${selectedType}`;
         });
 
+        // Mostrar descripción al pulsar el botón
         showDescriptionButton.addEventListener('click', () => {
             const selectedType = incidentType.value;
             descriptionArea.value = data[selectedType].description;
             descriptionArea.style.display = "block";
         });
 
-        submit.addEventListener('click', () => {
-            
+        // Vaciar el formulario al pulsar el botón "submit"
+        submit.addEventListener('click', (e) => {
+            e.preventDefault(); // Prevenir el comportamiento por defecto del botón
+            // Vaciar campos del formulario
+            incidentType.value = "distribution";
+            serie.value = "";
+            descriptionArea.value = "";
+            image.src = data["distribution"].img;
+            image.alt = "Imagen de distribución";
+            alert("Formulario enviado!!!");
         });
     </script>
 </body>
